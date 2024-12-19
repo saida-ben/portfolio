@@ -23,6 +23,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -49,15 +50,29 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+            <li><a href="services.html" class="active"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="contact.html" ><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    </nav>
+    <div>
+      
+      <div class="header-social-links">
+        <div class="dropdown">
+          <a data-mdb-dropdown-init class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="flag-united-kingdom flag m-0"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="Dropdown">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Français</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+          </ul>
+      </div>
+      </div>
+    </div>
 
       <div class="header-social-links">
         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -67,6 +82,9 @@
       </div>
 
     </div>
+    <style>
+
+    </style>
   </header>
 
   <main class="main">
@@ -87,7 +105,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item item-red position-relative">
               <div class="icon">
-                <img src="./assets/img/icon-graphics-black.svg" alt="">
+                <img src="./assets/img/conception-graphique.png" alt="">
               </div>
               <a href="#" class="stretched-link">
                 <h3>Conception Web</h3>
@@ -100,7 +118,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
               <div class="icon">
-                <img src="./assets/img/icon-development-black copy.svg" alt="">
+                <img src="./assets/img/codage.png" alt="">
               </div>
               <a href="#" class="stretched-link">
                 <h3>Développement Web</h3>
@@ -112,10 +130,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item item-teal position-relative">
               <div class="icon">
-                <img src="./assets/img/icon-content-black.svg" alt="">
+                <img src="./assets/img/creation-de-sites-web.png" alt="">
               </div>
               <a href="#" class="stretched-link">
-                <h3>Développement Web</h3>
+                <h3>Design Web</h3>
               </a>
               <p>Développement de sites web dynamiques et performants utilisant les dernières technologies et bonnes pratiques de développement.</p>
             </div>

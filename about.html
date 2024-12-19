@@ -26,7 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- =======================================================
   * Template Name: Kelly
   * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
@@ -34,74 +34,30 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
 
 <body class="about-page">
-
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+  <header id="header" class="header light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
         <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
-       
-        <img src="assets/img/image-removebg-preview (2).png" class="logo-icon" alt="">
+            <img src="assets/img/profile-img.png" class="logo-icon" alt="">
         </a>
-
         <nav id="navmenu" class="navmenu">
-            <ul class="nav">
-                <li class="nav-item">
-                  <a href="home.html" class="nav-link">
-                    <img src="assets/img/hom.png" alt="Home Icon" class="nav-icon">
-                    home       
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="about.html" class="nav-link {{ $currentRouteName == 'about' ? 'active' : '' }}">
-                    <img src="assets/img/utilisateur.png" alt="Home Icon" class="nav-icon">
-                    about
-                  </a>
-                </li>
-                <li class="nav-item">
-                    <a href="resume.html" class="nav-link {{ $currentRouteName == 'resume' ? 'active' : '' }}">
-                    <img src="assets/img/profil-personnel.png" alt="Home Icon" class="nav-icon">
-                    Resume
-                    </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="{{ route('projects') }}" class="nav-link {{ $currentRouteName == 'resume' ? 'active' : '' }}">
-                    <img src="assets/img/tache-terminee.png" alt="Home Icon" class="nav-icon">
-                    projets
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ route('services') }}" class="nav-link {{ $currentRouteName == 'services' ? 'active' : '' }}">
-                    <img src="assets/img/prestations-de-service.png" alt="Home Icon" class="nav-icon">
-                    Services
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ route('contact') }}" class="nav-link {{ $currentRouteName == 'contact' ? 'active' : '' }}">
-                    <img src="assets/img/utilisateur (1).png" alt="Home Icon" class="nav-icon">
-                    Contact
-                    </a>
-                </li>
+            <ul>
+                <li><a href="index.html" ><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="active"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="contact.html" ><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
-
-
-
-
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-
-         
         </nav>
-
-   
-
-
-
-  </div>
-
+        <div>
+          
+        </div>
     </div>
-  </header>
+</header>
 
   <main class="main">
 
@@ -111,41 +67,42 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>{{__('about.title')}}</h2>
-    <p>{{__('about.intro')}}</p>
+    <h2>À propos de moi</h2>
+    <p> Découvrez mon parcours dans le design et le développement, où la créativité 
+      rencontre la fonctionnalité pour créer des expériences numériques qui laissent une empreinte durable.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
     <div class="row gy-4 justify-content-center">
       <div class="col-lg-3">
-        <img src="{{ asset('img/profile-img.png') }}" class="img-fluid" alt="">
+        <img src="assets/img/img_diali.jpg" class="img-fluid" alt="">
       </div>
       <div class="col-lg-8 content">
-        <h2>{{__('about.web_developer_title')}}</h2>
-        <p class="fst-italic py-3">{{__('about.web_developer_description')}}
+        <h2>Développeur Web</h2>
+        <p class="fst-italic py-3">Passionné par le développement web et le design d'interfaces utilisateur,j'ai acquis une expertise dans la création d'applications web intuitives et visuellement attrayantes tout en assurant une expérience utilisateur de haute qualité.,
         </p>
         <div class="row">
           <div class="col-lg-6">
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{__('about.personal_info.birthday')}}:</strong> <span>{{__('about.personal_info.birthday_value')}}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{__('about.personal_info.website')}}:</strong> <span>{{__('about.personal_info.website_value')}}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{__('about.personal_info.phone')}}:</strong> <span>{{__('about.personal_info.phone_value')}}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{__('about.personal_info.city')}}:</strong> <span>{{__('about.personal_info.city_value')}}</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>birthday :</strong> <span>12 Juin 2003</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>website :</strong> <span>www.example.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>info.phone :</strong> <span>+123 713-927-838</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>city :</strong> <span>Casablanca, MAROC</span></li>
             </ul>
           </div>
           <div class="col-lg-6">
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{__('about.personal_info.age')}}:</strong> <span>{{__('about.personal_info.age_value')}}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{__('about.personal_info.degree')}}:</strong> <span>{{__('about.personal_info.degree_value')}}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{__('about.personal_info.freelance')}}:</strong> <span>{{__('about.personal_info.freelance_value')}}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{__('about.personal_info.city')}}:</strong> <span>{{__('about.personal_info.city')}}</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>age :</strong> <span>21</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>degree :</strong> <span>Licence Professionnelle</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>freelance :</strong> <span>benzariyasaida@gmail.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>city :</strong> <span>Disponible</span></li>
             </ul>
           </div>
         </div>
         <p class="py-3">
-         {{__('about.motivation')}}
-
+         Je suis motivé à offrir des solutions numériques innovantes et à relever les défis techniques dans divers projets. 
+         Mon parcours en ingénierie des systèmes d\'information et réseaux, ainsi que mon expérience en développement fullstack, me permettent de concevoir des systèmes robustes et évolutifs adaptés aux besoins des utilisateurs.',
 
       </p>
       </div>
@@ -160,8 +117,8 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>{{__('about.skills')}}</h2>
-    <p>{{__('about.skills_intro')}}</p>
+    <h2>Compétences</h2>
+    <p>Un ensemble de mes capacités techniques et créatives qui me permettent de fournir des solutions numériques exceptionnelles.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -171,68 +128,59 @@
       <div class="col-lg-4">
 
         <div class="progress">
-          <span class="skill"><span>{{__('about.skill_set.html')}} , {{__('about.skill_set.css')}}</span> <i class="val">80%</i></span>
+          <span class="skill"><span>HTML , CSS</span> <i class="val">80%</i></span>
           <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
-
-
 
         <div class="progress">
           <span class="skill"><span>Bootstrap CSS , Tailwind CSS</span> <i class="val">60%</i></span>
           <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="60"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        
-        <div class="progress">
-          <span class="skill"><span>{{__('about.skill_set.javascript')}}</span> <i class="val">60%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="60"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-
-      </div>
-
-
-      <div class="col-lg-4">
-
-        <div class="progress">
-          <span class="skill"><span>{{__('about.skill_set.php_laravel')}}</span> <i class="val">60%</i></span>
-          <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>{{__('about.skill_set.sql')}}</span> <i class="val">60%</i></span>
+          <span class="skill"><span>JavaScript</span> <i class="val">60%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
-
-
-        <div class="progress">
-          <span class="skill"><span>json , xml</span> <i class="val">60%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        
       </div>
 
       <div class="col-lg-4">
 
         <div class="progress">
-          <span class="skill"><span>Modélisation de Systèmes d'Information avec Merise
-          </span> <i class="val">80%</i></span>
+          <span class="skill"><span>PHP, LARAVEL</span> <i class="val">60%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Base de données SQL</span> <i class="val">60%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>JSON , XML</span> <i class="val">60%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+      <div class="col-lg-4">
+
+        <div class="progress">
+          <span class="skill"><span>Modélisation de Systèmes d'Information avec Merise</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
@@ -243,20 +191,14 @@
           </div>
         </div><!-- End Skills Item -->
 
-
-        <!-- End Skills Item -->
-
-
         <div class="progress">
-          <span class="skill"><span>figma</span> <i class="val">80%</i></span>
+          <span class="skill"><span>Figma</span> <i class="val">60%</i></span>
           <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
-        
       </div>
-
 
     </div>
 
@@ -271,8 +213,8 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>{{__('about.testimonials')}}</h2>
-    <p>{{__('about.testimonials_intro')}}</p>
+    <h2>Outils Utilisés</h2>
+    <p>Un aperçu des outils et technologies que je maîtrise dans le développement web.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -299,7 +241,7 @@
       <div class="swiper-slide">
             <div class="testimonial-item">
               <div class="icon">
-              <img src="{{asset('img/github-142-svgrepo-com.svg')}}" alt="Logo PHP" class="img-fluid">
+              <img src="img/github-142-svgrepo-com.svg" alt="Logo PHP" class="img-fluid">
               </div>  
               <h3>vscode</h3>
               <p> un éditeur de code source</p>
@@ -309,7 +251,7 @@
         <div class="swiper-slide">
             <div class="testimonial-item">
               <div class="icon">
-              <img src="{{asset('img/git-svgrepo-com.svg')}}" alt="Logo " class="img-fluid">
+              <img src="img/git-svgrepo-com.svg" alt="Logo " class="img-fluid">
               </div>  
               <h3>vscode</h3>
               <p> un éditeur de code source</p>
@@ -320,7 +262,7 @@
         <div class="swiper-slide">
             <div class="testimonial-item">
               <div class="icon">
-                 <img src="{{asset('img/vscode-svgrepo-com.svg')}}" alt="" >
+                 <img src="img/vscode-svgrepo-com.svg" alt="" >
               </div>  
               <h3>vscode</h3>
               <p> un éditeur de code source</p>
@@ -330,7 +272,7 @@
         <div class="swiper-slide">
             <div class="testimonial-item">
               <div class="icon">
-              <img src="{{asset('img/mysql-logo-svgrepo-com.svg')}}" alt="Logo PHP" class="img-fluid">
+              <img src="img/mysql-logo-svgrepo-com.svg" alt="Logo PHP" class="img-fluid">
               </div>  
               <h3>vscode</h3>
               <p> un éditeur de code source</p>
@@ -341,7 +283,7 @@
         <div class="swiper-slide">
             <div class="testimonial-item">
               <div class="icon">
-              <img src="{{asset('img/xampp-svgrepo-com.svg')}}" alt="Logo" class="img-fluid">
+              <img src="img/xampp-svgrepo-com.svg" alt="Logo" class="img-fluid">
               </div>  
               <h3>vscode</h3>
               <p> un éditeur de code source</p>
@@ -351,7 +293,7 @@
         <div class="swiper-slide">
             <div class="testimonial-item">
               <div class="icon">
-              <img src="{{asset('img/powerbi-svgrepo-com.svg')}}" alt="Logo PHP" class="img-fluid">
+              <img src="img/powerbi-svgrepo-com.svg" alt="Logo PHP" class="img-fluid">
               </div>  
               <h3>vscode</h3>
               <p> un éditeur de code source</p>
@@ -364,7 +306,7 @@
         <div class="swiper-slide">
             <div class="testimonial-item">
               <div class="icon">
-              <img src="{{asset('img/webflow-svgrepo-com.svg')}}" alt="Logo PHP" class="img-fluid">
+              <img src="img/webflow-svgrepo-com.svg" alt="Logo PHP" class="img-fluid">
               </div>  
               <h3>vscode</h3>
               <p> un éditeur de code source</p>
@@ -391,8 +333,8 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>{{__('about.facts')}}</h2>
-    <p>{{__('about.facts_intro')}}</p>
+    <h2>Faits</h2>
+    <p>Un aperçu rapide de mes principales réalisations et jalons dans mon parcours en tant que développeur web.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -402,28 +344,28 @@
       <div class="col-lg-3 col-md-6">
         <div class="stats-item text-center w-100 h-100">
           <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-          <p>{{__('about.fact_set.languages')}}</p>
+          <p>Langages de programmation</p>
         </div>
       </div><!-- End Stats Item -->
 
       <div class="col-lg-3 col-md-6">
         <div class="stats-item text-center w-100 h-100">
           <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-          <p> {{__('about.fact_set.projects')}}</p>
+          <p>Projets</p>
         </div>
       </div><!-- End Stats Item -->
 
       <div class="col-lg-3 col-md-6">
         <div class="stats-item text-center w-100 h-100">
           <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-          <p>{{__('about.fact_set.certifications')}}</p>
+          <p>Certifications obtenues</p>
         </div>
       </div><!-- End Stats Item -->
 
       <div class="col-lg-3 col-md-6">
         <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="100 " data-purecounter-duration="1" class="purecounter">+</span>
-          <p>{{__('about.fact_set.learning_hours')}}</p>
+          <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Heures d'apprentissage</p>
         </div>
       </div><!-- End Stats Item -->
 
@@ -432,7 +374,6 @@
   </div>
 
 </section><!-- /Stats Section -->
-
 
   </main>
 

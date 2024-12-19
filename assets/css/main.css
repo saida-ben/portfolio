@@ -87,6 +87,11 @@ h6 {
   font-family: var(--heading-font);
 }
 
+img {
+  width: 100%; /* L'image prendra toute la largeur de son conteneur */
+  height: auto; /* La hauteur s'ajustera automatiquement pour conserver le ratio */
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -208,25 +213,33 @@ h6 {
 /* Desktop Navigation */
 @media (min-width: 1200px) {
   .navmenu {
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  
   .navmenu ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
-    align-items: center;
+    justify-content: center;
   }
-
+  
   .navmenu li {
-    position: relative;
-  }
-
-  .navmenu>ul>li {
-    white-space: nowrap;
     padding: 15px 14px;
+    margin-right: 15px; /* Espace entre les éléments du menu */
+    white-space: nowrap;
   }
+  
+  .navmenu a {
+    display: flex;
+    align-items: center;
+    color: var(--nav-color);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
 
   .navmenu>ul>li:last-child {
     padding-right: 0;
@@ -235,7 +248,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    font-size: 15px;
+    font-size: 45;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -249,9 +262,10 @@ h6 {
 
   .navmenu a i,
   .navmenu a:focus i {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 0;
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     transition: 0.3s;
   }
 

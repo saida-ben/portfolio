@@ -18,14 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Spécifiez le serveur SMTP
         $mail->SMTPAuth = true;
-        $mail->Username = 's.benzariya7671@uca.ac.ma'; // Votre adresse email
-        $mail->Password = 'saidauca'; // Votre mot de passe ou mot de passe d'application
+        $mail->Username = 'benzariyasaida@gmail.com'; // Votre adresse email
+        $mail->Password = 'saidatt44'; // Votre mot de passe ou mot de passe d'application
         $mail->SMTPSecure = 'tls'; // Activer le chiffrement TLS
         $mail->Port = 587; // Port TCP à utiliser
 
         // Destinataire et expéditeur
         $mail->setFrom($email, $name);
-        $mail->addAddress('s.benzariya7671@uca.ac.ma'); // Adresse du destinataire
+        $mail->addAddress('benzariyasaida@gmail.com'); // Adresse du destinataire
 
         // Contenu de l'email
         $mail->isHTML(true);
